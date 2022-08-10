@@ -12,8 +12,6 @@ def test_guest_can_add_product_to_basket(browser):
     page.add_product_to_basket()
     page.should_be_equal_name()
     page.should_be_equal_price()
-    # page.should_not_be_success_message()
-    # page.message_should_be_disappeared()
 
 
 @pytest.mark.xfail
@@ -90,7 +88,5 @@ class TestUserAddToBasketFromProductPage:
         page.add_product_to_basket()
         page.should_be_equal_name()
         page.should_be_equal_price()
-        #page.should_not_be_success_message()
-        #page.message_should_be_disappeared()
 
 # pytest -s test_product_page.py
