@@ -88,5 +88,3 @@ class TestUserAddToBasketFromProductPage:
         page.add_product_to_basket()
         page.should_be_equal_name()
         page.should_be_equal_price()
-
-# pytest -s test_product_page.py
